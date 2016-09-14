@@ -67,7 +67,7 @@ app.controller('MainCtrl', ['$scope', '$http', 'uiGridConstants', function ($sco
         enableSelectAll: true,
         exporterCsvFilename: 'myFile.csv',
         exporterPdfDefaultStyle: { fontSize: 9 },
-        exporterPdfTableStyle: { margin: [30, 30, 30, 30] },
+        exporterPdfTableStyle: { margin: [-15, 0, 0, 0] },
         exporterPdfTableHeaderStyle: { fontSize: 10, bold: true, italics: true, color: 'red' },
         exporterPdfHeader: { text: "My Header", style: 'headerStyle' },
         exporterPdfFooter: function (currentPage, pageCount) {

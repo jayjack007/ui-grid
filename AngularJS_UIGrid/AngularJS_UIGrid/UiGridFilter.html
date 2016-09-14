@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+<!--Import Json or CSV-->
 <html>
 <head>
     <title></title>
@@ -9,16 +10,12 @@
 <!--<script src="Scripts/jquery-3.1.0.min.js"></script>-->
 <script src="Scripts/angular-touch.js"></script>
 <script src="Scripts/angular-animate.js"></script>
+<script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
 <script src="Scripts/ui-grid.js"></script>
 <script src="App/UiGrid.js"></script>
-<div ng-app="app1" ng-controller="MainCtrl1">
-    You can use asterisks to fuzz-match, i.e. use "*z*" as your filter to show any row where that column contains a "z".
-    <br>
-    <br>
-    <strong>Note:</strong> The third column has the filter input disabled, but actually has a filter set in code that requires every company to have an 'a' in their name.
-    <br>
-    <br>
-    <button id='toggleFiltering' ng-click="toggleFiltering()" class="btn btn-success">Toggle Filtering</button>
-    <div id="grid1" ui-grid="gridOptions" class="grid" ui-grid-pagination></div>
+<div ng-app="app1">
+    <div ng-controller="MainCtrl1">
+        <div ui-grid="gridOptions" ui-grid-importer class="grid"></div>
+    </div>
 </div>
 </html>

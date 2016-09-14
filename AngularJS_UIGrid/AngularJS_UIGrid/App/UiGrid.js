@@ -24,7 +24,7 @@ app.controller('MainCtrl1', ['$scope', '$http', 'uiGridConstants', function ($sc
         columnDefs: [
           // default
           { field: 'name', headerCellClass: $scope.highlightFilteredHeader },
-          // pre-populated search field
+          // pre-populated search fie
           {
               field: 'gender', filter: {
                   term: '1',

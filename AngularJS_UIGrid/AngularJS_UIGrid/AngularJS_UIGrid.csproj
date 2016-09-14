@@ -57,7 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\Edit cell.js" />
     <Content Include="App\Exportjs.js" />
+    <Content Include="Edit grid.html" />
     <Content Include="Export.html" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="packages.config" />
